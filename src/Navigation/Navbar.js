@@ -44,9 +44,9 @@ export default function Navbar() {
           {/* Menu when it truncates */}
           <Disclosure.Panel className="sm:hidden items-center justify-center">
             <div className="space-y-1 px-2 pt-2 pb-3 flex items-center justify-center">
-                <Disclosure.Button href='#home' className='navbarButton'>Home</Disclosure.Button>
-                <Disclosure.Button href='#resume' className='navbarButton'>Resume</Disclosure.Button>
-                <Disclosure.Button href='#projects' className='navbarButton'>Projects</Disclosure.Button>
+                <a href='#home' className='navbarButton'>Home</a>
+                <a href='#resume' className='navbarButton'>Resume</a>
+                <a href='#projects' className='navbarButton'>Projects</a>
             </div>
           </Disclosure.Panel>
         </>

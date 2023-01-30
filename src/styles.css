@@ -2,6 +2,29 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.experienceCompany {
+  font-weight: 600;
+  font-size: x-large;
+  float: left;
+}
+
+.experienceDescription {
+  float: left;
+  margin-left: 20px;
+  max-width: 700px;
+  padding-top: 10px;
+}
+
+.experienceRole {
+  font-weight: 600;
+  float: left;
+}
+
+.experienceTime {
+  font-style: italic;
+  float: right;
+}
+
 .footer {
   align-items: center;
   background-color: rgb(209, 211, 215);
@@ -15,8 +38,9 @@
 }
 
 .maindiv {
-  padding-left: 100px;
-  padding-right: 100px;
+  min-height: 100vh;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 50px;
 }
 

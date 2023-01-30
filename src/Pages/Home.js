@@ -6,7 +6,8 @@ import Badges from "../Components/Badges"
 function Home() {
     return(
         <div id='home' className="maindiv">
-            <h2>Hi there, I'm Berke 👋</h2>
+            <h1>Welcome</h1>
+            <h2>I'm Berke 👋</h2>
             <p>
                 🔭:
                 I am an undergraduate student in Computer Science at Sabanci University.

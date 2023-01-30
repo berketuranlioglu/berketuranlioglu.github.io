@@ -6,15 +6,30 @@ import { db } from "../firebase"
 
 const Experience = () => {
     const ref = collection(db, "resume");
-    const docRef = doc(ref, "2RsaCPNZZa62XhOLTr50");
-    const [docData, isLoading] = useDocumentData(docRef);
+    const docRef = doc(ref, "experience");
+    const [data, isLoading] = useDocumentData(docRef);
 
     if (isLoading) {
         return <div>Loading...</div>
     }
     else {
+        console.log(data.companies[1].description)
         return(
-            <div>{docData.experience}</div>
+            <div className='row'>
+                {data.companies.map((exp) => (
+                    <div>
+                        <span className='experienceCompany'>{exp.company}</span>
+                        <span className='experienceTime'>{exp.time}</span>
+                        <br></br><br></br>
+                        <span className='experienceRole'>{exp.role}</span>
+                        <br></br>
+                        {exp.description.map((description) => (
+                            <span className='experienceDescription'>&#x2022; {description}</span>
+                        ))}
+                        <br></br><br></br><br></br>
+                    </div>
+                ))}
+            </div>
         );
     }
 };

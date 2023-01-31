@@ -24,7 +24,10 @@ const Experience = () => {
                         <span className='experienceRole'>{exp.role}</span>
                         <br></br>
                         {exp.description.map((description) => (
-                            <span className='experienceDescription'>&#x2022; {description}</span>
+                            <div>
+                                <span className='experienceDescription'>&#x2022; {description}
+                                </span>
+                            </div>
                         ))}
                         <br></br><br></br><br></br>
                     </div>

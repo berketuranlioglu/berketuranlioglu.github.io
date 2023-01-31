@@ -1,7 +1,7 @@
 function Projects() {
     return(
         <div id='projects' className="maindiv">
-            Projects - Will be updated...
+            <h2>Projects - Will be updated...</h2>
         </div>
     );
 }

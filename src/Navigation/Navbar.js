@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
+/*
 const navigation = [
   { name: 'Home', href: '#home', current: true },
   { name: 'Resume', href: '#resume', current: false },
@@ -11,10 +12,11 @@ const navigation = [
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
+*/
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-gray-200 sticky top-0 z-50">
+    <Disclosure as="nav" className="navbarButton maindivNavbar sticky top-0 z-50">
       {({ open }) => (
         <>
           <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}} className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

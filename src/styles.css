@@ -2,6 +2,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.customLink {
+  color: rgb(176, 141, 226);
+}
+
 .experienceCompany {
   font-weight: 600;
   font-size: x-large;
@@ -27,26 +31,63 @@
 
 .footer {
   align-items: center;
-  background-color: rgb(209, 211, 215);
+  background-color: rgb(4, 4, 4);
   display: flex;
   justify-content: center;
   height: 150px;
+  color: aliceblue;
 }
 
-.footerlink {
-  color: darkblue;
+.gradient {
+  color: inherit;
+  background-image: radial-gradient(
+      circle at 24% 61%,
+      hsla(247.5, 100%, 85.88%, 0.5236846413915921) 24%,
+      #0055ffd6 100%
+    ),
+    repeating-conic-gradient(
+      from 360deg at 59% 59%,
+      #9900ff4a 20%,
+      hsla(40.18, 100%, 50%, 0.78) 81%
+    ),
+    radial-gradient(
+      circle at 51% 54%,
+      hsla(296, 100%, 58.61%, 0.55) 65%,
+      #ff950061 80%
+    ),
+    repeating-conic-gradient(
+      from 4deg at 53% 22%,
+      hsla(159.38, 54.24%, 23.14%, 0) 25%,
+      hsl(312, 73.9%, 70.82%) 63%
+    ),
+    repeating-linear-gradient(
+      19deg,
+      #7c54dbf7 22%,
+      hsla(41.01, 88.44%, 44.12%, 0.6418138379229426) 46%
+    ),
+    conic-gradient(
+      from 25deg at 88% 10%,
+      #3a3804 100%,
+      hsl(284, 100%, 50%) 100%
+    );
 }
 
 .maindiv {
   min-height: 100vh;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 5vw;
+  margin-bottom: 5vw;
+  color: rgb(231, 246, 242);
+}
+
+.maindivNavbar {
+  background-color: rgba(44, 44, 44, 0.6);
 }
 
 .navbarButton {
-  color: darkblue;
-  font-size: medium;
+  color: rgb(231, 246, 242);
+  font-size: large;
   text-decoration: none;
   padding-left: 40px;
   padding-right: 40px;
@@ -59,7 +100,7 @@
 
 .navbarButton:focus {
   border-radius: 30px;
-  background-color: gainsboro;
+  color: aqua;
 }
 
 .photo {
@@ -75,7 +116,73 @@
   display: inline-block;
 }
 
+/*TO DIVIDE THE SCREEN IN HALF*/
+.splitScreen {
+  display: grid;
+  grid-template-columns: auto auto;  /* grid has two columns; content defines width */
+  justify-content: space-between;    /* horizontal alignment of grid tracks */
+  align-items: center;
+}
+
+.leftSide {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.rightSide {
+  grid-column: 2;
+  grid-row: 1;
+}
+/*-----------------*/
+
 .swiftText {
-  color: crimson;
+  color: rgb(239, 125, 148);
   font-weight: 600;
+}
+
+.container {
+  max-width: 700px!important;
+}
+
+/*FOR TEXT ANIMATION*/
+.spoiler {
+  color: transparent;
+  background-position: right;
+  background-size: 100% 100%;
+  background-image: linear-gradient(#a0aec0, #a0aec0);
+  display: inline;
+  background-repeat: no-repeat;
+  transition: all 500ms ease-out;
+  animation-delay: 1s;
+}
+.spoiler:hover {
+  color: #000;
+  background-size: 0% 100%;
+}
+/*-----------------*/
+
+.swipedownText {
+  font-size: 2vw;
+  text-decoration: none;
+  color: rgb(231, 246, 242);
+  transition: color 0.2s, ease-out 0.2s;
+}
+
+.swipedownText:hover {
+  color: rgb(165, 201, 202);
+}
+
+.welcomeBackground {
+  display: flex;
+}
+
+.welcomeTextBackground {
+  align-items: center;
+}
+
+.welcomeText {
+  background-color: rgb(44, 44, 44);
+  min-width: 30vw;
+  font-size: 4vw;
+  padding: 20px;
 }

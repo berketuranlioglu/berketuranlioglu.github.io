@@ -3,11 +3,11 @@ import "../styles.css";
 import Languages from "../Components/Languages"
 import Badges from "../Components/Badges"
 
-function Home() {
+function AboutMe() {
     return(
         <div id='home' className="maindiv">
-            <h1>Welcome</h1>
-            <h2>I'm Berke 👋</h2>
+            <h1>About Me</h1>
+            <br></br>
             <p>
                 🔭:
                 I am an undergraduate student in Computer Science at Sabanci University.
@@ -22,7 +22,7 @@ function Home() {
             <p>
                 💎:
                 Other than iOS, you can find my other projects as well! For instance,
-                check out the <a href="https://github.com/berketuranlioglu/devstore_project">Devstore e-commerce application</a> coded by me and my friends with Flutter!
+                check out the <a className="customLink" href="https://github.com/berketuranlioglu/devstore_project">Devstore e-commerce application</a> coded by me and my friends with Flutter!
             </p>
 
             <hr/>
@@ -50,4 +50,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default AboutMe;

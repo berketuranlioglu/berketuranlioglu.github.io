@@ -16,10 +16,10 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="navbarButton maindivNavbar sticky top-0 z-50">
+    <Disclosure as="nav" className="sticky top-6 z-50">
       {({ open }) => (
         <>
-          <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}} className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="maindivNavbar mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -33,7 +33,7 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="hidden sm:ml-6 sm:block">
+                <div className="hidden sm:block">
                   <div className="flex space-x-4">
                       <a href='#home' className='navbarButton'>Home</a>
                       <a href='#resume' className='navbarButton'>Resume</a>
@@ -45,7 +45,7 @@ export default function Navbar() {
           </div>
           {/* Menu when it truncates */}
           <Disclosure.Panel className="sm:hidden items-center justify-center">
-            <div className="space-y-1 px-2 pt-2 pb-3 flex items-center justify-center">
+            <div className="maindivNavbar space-y-1 px-2 pt-2 pb-3 flex items-center justify-center">
                 <a href='#home' className='navbarButton'>Home</a>
                 <a href='#resume' className='navbarButton'>Resume</a>
                 <a href='#projects' className='navbarButton'>Projects</a>

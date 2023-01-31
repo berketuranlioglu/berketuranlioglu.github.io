@@ -2,6 +2,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 150px);
+  }
+
 .customLink {
   color: rgb(176, 141, 226);
 }
@@ -77,12 +83,28 @@
   padding-left: 5vw;
   padding-right: 5vw;
   padding-bottom: 5vw;
-  margin-bottom: 5vw;
+  padding-top: 5vw;
   color: rgb(231, 246, 242);
 }
 
 .maindivNavbar {
-  background-color: rgba(44, 44, 44, 0.6);
+  background: rgba( 255, 255, 255, 0.01 );
+  display: flex;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+
+  /* This controls the blurring effect*/
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
+
+  /*Adding the shadow*/
+  box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.18 );
+
+  /* Adding our borders*/
+  border-radius: 30px;
+  border: 1px solid rgba( 255, 255, 255, 0.05 );
+  z-index: 4;
 }
 
 .navbarButton {
@@ -95,6 +117,7 @@
 }
 
 .navbarButton:hover {
+  color: rgb(239, 125, 148);
   transform: scale(1.2)
 }
 

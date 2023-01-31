@@ -6,12 +6,14 @@ import Resume from "./Pages/Resume.js"
 import Projects from "./Pages/Projects.js"
 import Footer from "./Pages/Footer"
 import "./styles.css"
+import NEWAboutMe from "./Pages/NEWAboutMe.js";
 
 function App() {
   return (
     <div style={{backgroundColor: 'rgb(44, 44, 44)'}}>
       <Welcome />
       <Navbar />
+      {/* <NEWAboutMe /> */}
       <AboutMe />
       <Resume />
       <Projects />

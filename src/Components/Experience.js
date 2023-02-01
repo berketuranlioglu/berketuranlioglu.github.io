@@ -13,7 +13,6 @@ const Experience = () => {
         return <div>Loading...</div>
     }
     else {
-        console.log(data.companies[1].description)
         return(
             <div className='row'>
                 {data.companies.map((exp) => (

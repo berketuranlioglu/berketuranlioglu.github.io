@@ -1,7 +1,5 @@
 import React from "react";
 import "../styles.css";
-import Languages from "../Components/Languages"
-import Badges from "../Components/Badges"
 
 function NEWAboutMe() {
     return(

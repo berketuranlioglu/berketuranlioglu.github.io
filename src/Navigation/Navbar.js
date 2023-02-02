@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+// import {useState} from 'react';
 
 /*
 const navigation = [
@@ -15,6 +16,17 @@ function classNames(...classes) {
 */
 
 export default function Navbar() {
+
+  /*
+  const [isActive, setIsActive] = useState(false);
+
+  const expandNavbar = () => {
+    
+    setIsActive(current => !current);
+
+  };
+  */
+
   return (
     <Disclosure as="nav" className="sticky top-6 z-50">
       {({ open }) => (
@@ -44,8 +56,8 @@ export default function Navbar() {
             </div>
           </div>
           {/* Menu when it truncates */}
-          <Disclosure.Panel className="sm:hidden items-center justify-center">
-            <div className="maindivNavbar space-y-1 px-2 pt-2 pb-3 flex items-center justify-center">
+          <Disclosure.Panel className=" maindivNavbar sm:hidden items-center justify-center">
+            <div className="space-y-1 px-2 pt-2 pb-3 flex items-center justify-center">
                 <a href='#home' className='navbarButton'>Home</a>
                 <a href='#resume' className='navbarButton'>Resume</a>
                 <a href='#projects' className='navbarButton'>Projects</a>

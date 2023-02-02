@@ -37,3 +37,37 @@ const Project = () => {
 };
 
 export default Project;
+
+/*
+<Carousel
+                            className='screenshot'
+                            useKeyboardArrows={true}
+                            emulateTouch={true}
+                            infiniteLoop={true}
+                            showThumbs={false}
+                            renderIndicator={(onClickHandler, isSelected, index, label) => {
+                                const defStyle = { color: "rgb(176, 141, 226)", cursor: "pointer", padding:8 };
+                                const style = isSelected
+                                  ? { ...defStyle, color: "rgb(136, 101, 186)" }
+                                  : { ...defStyle };
+                                return (
+                                  <span
+                                    style={style}
+                                    onClick={onClickHandler}
+                                    onKeyDown={onClickHandler}
+                                    value={index}
+                                    key={index}
+                                    role="button"
+                                    tabIndex={0}
+                                    aria-label={`${label} ${index + 1}`}
+                                  >
+                                    &#x2022;
+                                  </span>
+                                );
+                              }}
+                            >
+                                {project.screenshots.map((ss) => (
+                                    <img className='screenshot' src={ss} alt=''/>
+                                ))}
+                            </Carousel>
+*/

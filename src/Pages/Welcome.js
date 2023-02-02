@@ -1,4 +1,6 @@
 import MovingText from 'react-moving-text'
+import Typewriter from 'typewriter-effect';
+import { Stack } from '@mui/material';
 import "../styles.css"
 
 const Welcome = () => {
@@ -29,9 +31,27 @@ const Welcome = () => {
                     timing="ease-in"
                     iteration="1"
                     fillMode="none">
+                        <Stack direction="row">
                         <span className='welcomeText'>
-                        I am Berke Turanlioglu
-                        </span>
+                            <Typewriter
+                            onInit={(typewriter) => {
+                                typewriter.pauseFor(2500)
+                                .changeDelay(40)
+                                .changeDeleteSpeed(40)
+                                .typeString("I'm Berke Turainlo")
+                                .pauseFor(500)
+                                .deleteChars(8)
+                                .pauseFor(200)
+                                .typeString('Turanlgiol')
+                                .pauseFor(500)
+                                .deleteChars(10)
+                                .pauseFor(200)
+                                .typeString('Turanlioglu')
+                                .start();
+                            }}
+                            />
+                            </span>
+                        </Stack>
                     </MovingText>
                 </div>
             </div>
